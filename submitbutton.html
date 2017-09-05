@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Submit the code</title>
+<script src="jquery-3.2.1.slim.min.js"></script>
+</head>
+
+<body>
+<script>
+	
+$(function() {
+  jQuery.fn.extend({
+    disable: function(state) {
+      return this.each(function() {
+        this.disabled = state;
+      });
+    }
+  });
+	$('input[type="submit"], input[type="button"], button').disable(true);
+});
+
+$('#btn').click(function() {
+  window.top.location='#';
+});
+	
+$(document).ready(function(){
+		var x1, x2, x3, x4;
+		x1 = document.getElementById("code01").value;
+		x2 = document.getElementById("code02").value;
+		x3 = document.getElementById("code03").value;
+		x4 = document.getElementById("code04").value;
+
+    $("input").keyup(function(){
+        
+		x1 = document.getElementById("code01").value;
+		x2 = document.getElementById("code02").value;
+		x3 = document.getElementById("code03").value;
+		x4 = document.getElementById("code04").value;
+		if (x1 == 7 && x2 == 6 && x3 == 8  && x4 == 3) {
+			$("input").css("background-color", "#99e099");
+			$('#btn').click(function() {
+				window.top.location='https://mikesuszek.itch.io/smwcghy7683';
+			});
+
+	$('input[type="submit"], input[type="button"], button').disable(false);
+		
+    } else {
+	$('input[type="submit"], input[type="button"], button').disable(true);
+$('#btn').click(function() {
+  window.top.location='#';
+});
+		$("input").css("background-color", "#ffffff");
+    }
+    });
+});
+</script>
+<div style="width:100%;" align="center">
+<input id="code01" class="codeentry" placeholder=""/>
+<input id="code02" class="codeentry" placeholder=""/>
+<input id="code03" class="codeentry" placeholder=""/>
+<input id="code04" class="codeentry" placeholder=""/>
+<br><br>
+<button id="btn">Submit the secret</button>
+	</div>
+<style>
+#btn {
+	background-color:#ffffff;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Verdana;
+	font-size:14px;
+	padding:12px 30px;
+	text-decoration:none;
+}
+	#btn:normal {
+		background-color: #ffffff;
+	}
+	#btn:disabled {
+		background-color: #999999;
+	}
+.codeentry {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 20px;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 28px/normal Arial, Helvetica, sans-serif;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#code01 {  color:#005DB3;}
+#code02 {  color:#B30004;}
+#code03 {  color:#00B300;}
+#code04 {  color:#B28300;}
+	</style>
+</body>
+</html>
